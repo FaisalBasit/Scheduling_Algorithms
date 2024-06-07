@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sign_up));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.Register = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label = new System.Windows.Forms.Label();
-            this.num_of_process = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaTextBox2 = new Guna.UI.WinForms.GunaTextBox();
+            this.username = new Guna.UI.WinForms.GunaTextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Register = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.pass = new Guna.UI.WinForms.GunaTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.name = new Guna.UI.WinForms.GunaTextBox();
+            this.label = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -48,19 +48,49 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.panel1.Controls.Add(this.gunaTextBox2);
+            this.panel1.Controls.Add(this.username);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Register);
-            this.panel1.Controls.Add(this.gunaTextBox1);
+            this.panel1.Controls.Add(this.pass);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.num_of_process);
+            this.panel1.Controls.Add(this.name);
             this.panel1.Controls.Add(this.label);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(317, 430);
             this.panel1.TabIndex = 3;
+            // 
+            // username
+            // 
+            this.username.BackColor = System.Drawing.Color.Transparent;
+            this.username.BaseColor = System.Drawing.Color.White;
+            this.username.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
+            this.username.BorderSize = 2;
+            this.username.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.username.FocusedBaseColor = System.Drawing.Color.White;
+            this.username.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.username.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.username.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.username.Location = new System.Drawing.Point(47, 199);
+            this.username.Name = "username";
+            this.username.PasswordChar = '\0';
+            this.username.Radius = 10;
+            this.username.Size = new System.Drawing.Size(221, 27);
+            this.username.TabIndex = 122;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
+            this.label3.Location = new System.Drawing.Point(44, 180);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 16);
+            this.label3.TabIndex = 123;
+            this.label3.Text = "Username";
             // 
             // label1
             // 
@@ -72,17 +102,6 @@
             this.label1.Size = new System.Drawing.Size(80, 23);
             this.label1.TabIndex = 121;
             this.label1.Text = "Sign Up";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(63)))), ((int)(((byte)(89)))));
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(607, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 120;
-            this.pictureBox4.TabStop = false;
             // 
             // Register
             // 
@@ -116,25 +135,25 @@
             this.Register.TabIndex = 118;
             this.Register.Text = "Register";
             this.Register.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-           
+            this.Register.Click += new System.EventHandler(this.Register_Click);
             // 
-            // gunaTextBox1
+            // pass
             // 
-            this.gunaTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.gunaTextBox1.BorderSize = 2;
-            this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox1.Location = new System.Drawing.Point(47, 260);
-            this.gunaTextBox1.Name = "gunaTextBox1";
-            this.gunaTextBox1.PasswordChar = '\0';
-            this.gunaTextBox1.Radius = 10;
-            this.gunaTextBox1.Size = new System.Drawing.Size(221, 27);
-            this.gunaTextBox1.TabIndex = 116;
+            this.pass.BackColor = System.Drawing.Color.Transparent;
+            this.pass.BaseColor = System.Drawing.Color.White;
+            this.pass.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
+            this.pass.BorderSize = 2;
+            this.pass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.pass.FocusedBaseColor = System.Drawing.Color.White;
+            this.pass.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.pass.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.pass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.pass.Location = new System.Drawing.Point(47, 260);
+            this.pass.Name = "pass";
+            this.pass.PasswordChar = '\0';
+            this.pass.Radius = 10;
+            this.pass.Size = new System.Drawing.Size(221, 27);
+            this.pass.TabIndex = 116;
             // 
             // label2
             // 
@@ -148,16 +167,23 @@
             this.label2.TabIndex = 117;
             this.label2.Text = "Password";
             // 
-            // pictureBox1
+            // name
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(317, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(317, 430);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.name.BackColor = System.Drawing.Color.Transparent;
+            this.name.BaseColor = System.Drawing.Color.White;
+            this.name.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
+            this.name.BorderSize = 2;
+            this.name.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.name.FocusedBaseColor = System.Drawing.Color.White;
+            this.name.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.name.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.name.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.name.Location = new System.Drawing.Point(47, 137);
+            this.name.Name = "name";
+            this.name.PasswordChar = '\0';
+            this.name.Radius = 10;
+            this.name.Size = new System.Drawing.Size(221, 27);
+            this.name.TabIndex = 113;
             // 
             // label
             // 
@@ -171,55 +197,30 @@
             this.label.TabIndex = 114;
             this.label.Text = "Name";
             // 
-            // num_of_process
+            // pictureBox4
             // 
-            this.num_of_process.BackColor = System.Drawing.Color.Transparent;
-            this.num_of_process.BaseColor = System.Drawing.Color.White;
-            this.num_of_process.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.num_of_process.BorderSize = 2;
-            this.num_of_process.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.num_of_process.FocusedBaseColor = System.Drawing.Color.White;
-            this.num_of_process.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.num_of_process.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.num_of_process.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.num_of_process.Location = new System.Drawing.Point(47, 137);
-            this.num_of_process.Name = "num_of_process";
-            this.num_of_process.PasswordChar = '\0';
-            this.num_of_process.Radius = 10;
-            this.num_of_process.Size = new System.Drawing.Size(221, 27);
-            this.num_of_process.TabIndex = 113;
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(63)))), ((int)(((byte)(89)))));
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(607, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 120;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // gunaTextBox2
+            // pictureBox1
             // 
-            this.gunaTextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.gunaTextBox2.BorderSize = 2;
-            this.gunaTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox2.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox2.Location = new System.Drawing.Point(47, 199);
-            this.gunaTextBox2.Name = "gunaTextBox2";
-            this.gunaTextBox2.PasswordChar = '\0';
-            this.gunaTextBox2.Radius = 10;
-            this.gunaTextBox2.Size = new System.Drawing.Size(221, 27);
-            this.gunaTextBox2.TabIndex = 122;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(317, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(317, 430);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
-            this.label3.Location = new System.Drawing.Point(44, 180);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 16);
-            this.label3.TabIndex = 123;
-            this.label3.Text = "Username";
-            // 
-            // signin
+            // sign_up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -229,7 +230,8 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "signin";
+            this.Name = "sign_up";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "signin";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -242,14 +244,14 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox2;
+        private Guna.UI.WinForms.GunaTextBox username;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private Guna.UI.WinForms.GunaAdvenceButton Register;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
+        private Guna.UI.WinForms.GunaTextBox pass;
         private System.Windows.Forms.Label label2;
-        private Guna.UI.WinForms.GunaTextBox num_of_process;
+        private Guna.UI.WinForms.GunaTextBox name;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

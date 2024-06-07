@@ -21,6 +21,9 @@ namespace OS_project
             InitializeComponent();
 
         }
+
+        public string name1 { get; set; }
+        public string username1 { get; set; }
         private void addUserControl(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
@@ -50,6 +53,7 @@ namespace OS_project
         {
             home cal = new home();
             addUserControl(cal);
+            welcome.Text = "Welcome, " + Convert.ToString(name1);
 
 
         }
@@ -95,10 +99,21 @@ namespace OS_project
             DialogResult check = MessageBox.Show("Are you sure you want to Logout?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (check == DialogResult.Yes)
             {
-                sign_up signin = new sign_up();
-                signin.Show();
+                signin signinForm = new signin();
+                signinForm.Show();
                 this.Close();
             }
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void controlpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 }

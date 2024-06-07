@@ -26,3 +26,5 @@ D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.ho
 D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.Review.resources
 D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.steps.resources
 D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.Upgrade.resources
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.sign_up.resources
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.signin.resources

@@ -49,6 +49,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.controlpanel = new System.Windows.Forms.Panel();
+            this.welcome = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -79,6 +80,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(63)))), ((int)(((byte)(89)))));
+            this.panel2.Controls.Add(this.welcome);
             this.panel2.Controls.Add(this.home);
             this.panel2.Controls.Add(this.log_out);
             this.panel2.Controls.Add(this.pictureBox4);
@@ -90,8 +92,9 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(924, 143);
+            this.panel2.Size = new System.Drawing.Size(924, 162);
             this.panel2.TabIndex = 83;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // home
             // 
@@ -454,6 +457,18 @@
             this.controlpanel.Name = "controlpanel";
             this.controlpanel.Size = new System.Drawing.Size(924, 426);
             this.controlpanel.TabIndex = 110;
+            this.controlpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.controlpanel_Paint);
+            // 
+            // welcome
+            // 
+            this.welcome.AutoSize = true;
+            this.welcome.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold);
+            this.welcome.ForeColor = System.Drawing.Color.White;
+            this.welcome.Location = new System.Drawing.Point(298, 14);
+            this.welcome.Name = "welcome";
+            this.welcome.Size = new System.Drawing.Size(171, 23);
+            this.welcome.TabIndex = 84;
+            this.welcome.Text = "Welcome, Faisal";
             // 
             // Form1
             // 
@@ -471,6 +486,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -501,6 +517,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel controlpanel;
         private Guna.UI.WinForms.GunaAdvenceButton home;
+        private System.Windows.Forms.Label welcome;
     }
 }
 

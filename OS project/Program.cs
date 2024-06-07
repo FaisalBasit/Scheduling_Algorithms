@@ -16,7 +16,9 @@ namespace OS_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            signin signinForm = new signin();
+            Application.Run(signinForm);
         }
     }
 }
