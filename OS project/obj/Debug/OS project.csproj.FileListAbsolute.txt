@@ -10,3 +10,19 @@ D:\sir syed(3)\4rd Semester\OS project\obj\Debug\OS project.pdb
 D:\sir syed(3)\4rd Semester\OS project\obj\Debug\OS_project.Form1.resources
 D:\sir syed(3)\4rd Semester\OS project\bin\Debug\Guna.UI.dll
 D:\sir syed(3)\4rd Semester\OS project\obj\Debug\OS project.csproj.CopyComplete
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS project.csproj.AssemblyReference.cache
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.Calculate.resources
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.Form1.resources
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.Properties.Resources.resources
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS project.csproj.GenerateResource.cache
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS project.csproj.CoreCompileInputs.cache
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS project.exe
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS project.pdb
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\bin\Debug\OS project.exe.config
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\bin\Debug\OS project.exe
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\bin\Debug\OS project.pdb
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS project.csproj.CopyComplete
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.home.resources
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.Review.resources
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.steps.resources
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.Upgrade.resources
