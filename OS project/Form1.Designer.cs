@@ -33,6 +33,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.welcome = new System.Windows.Forms.Label();
             this.home = new Guna.UI.WinForms.GunaAdvenceButton();
             this.log_out = new Guna.UI.WinForms.GunaAdvenceButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -49,7 +50,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.controlpanel = new System.Windows.Forms.Panel();
-            this.welcome = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -94,7 +94,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(924, 162);
             this.panel2.TabIndex = 83;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // welcome
+            // 
+            this.welcome.AutoSize = true;
+            this.welcome.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold);
+            this.welcome.ForeColor = System.Drawing.Color.White;
+            this.welcome.Location = new System.Drawing.Point(298, 14);
+            this.welcome.Name = "welcome";
+            this.welcome.Size = new System.Drawing.Size(171, 23);
+            this.welcome.TabIndex = 84;
+            this.welcome.Text = "Welcome, Faisal";
             // 
             // home
             // 
@@ -113,7 +123,7 @@
             this.home.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.home.ForeColor = System.Drawing.Color.White;
             this.home.Image = ((System.Drawing.Image)(resources.GetObject("home.Image")));
-            this.home.ImageOffsetX = 13;
+            this.home.ImageOffsetX = 15;
             this.home.ImageSize = new System.Drawing.Size(30, 30);
             this.home.LineColor = System.Drawing.Color.Transparent;
             this.home.LineTop = 3;
@@ -189,7 +199,7 @@
             this.Review_main.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Review_main.ForeColor = System.Drawing.Color.White;
             this.Review_main.Image = ((System.Drawing.Image)(resources.GetObject("Review_main.Image")));
-            this.Review_main.ImageOffsetX = 5;
+            this.Review_main.ImageOffsetX = 8;
             this.Review_main.ImageSize = new System.Drawing.Size(30, 30);
             this.Review_main.LineColor = System.Drawing.Color.Transparent;
             this.Review_main.LineTop = 3;
@@ -203,7 +213,7 @@
             this.Review_main.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(90)))), ((int)(((byte)(128)))));
             this.Review_main.Size = new System.Drawing.Size(145, 48);
             this.Review_main.TabIndex = 82;
-            this.Review_main.Text = "Review";
+            this.Review_main.Text = "Feedback";
             this.Review_main.Click += new System.EventHandler(this.Review_main_Click);
             // 
             // upgrade_main
@@ -222,7 +232,7 @@
             this.upgrade_main.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.upgrade_main.ForeColor = System.Drawing.Color.White;
             this.upgrade_main.Image = ((System.Drawing.Image)(resources.GetObject("upgrade_main.Image")));
-            this.upgrade_main.ImageOffsetX = 5;
+            this.upgrade_main.ImageOffsetX = 9;
             this.upgrade_main.ImageSize = new System.Drawing.Size(30, 30);
             this.upgrade_main.LineColor = System.Drawing.Color.Transparent;
             this.upgrade_main.LineTop = 3;
@@ -255,7 +265,7 @@
             this.cal_main.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cal_main.ForeColor = System.Drawing.Color.White;
             this.cal_main.Image = ((System.Drawing.Image)(resources.GetObject("cal_main.Image")));
-            this.cal_main.ImageOffsetX = 5;
+            this.cal_main.ImageOffsetX = 7;
             this.cal_main.ImageSize = new System.Drawing.Size(30, 30);
             this.cal_main.LineColor = System.Drawing.Color.Transparent;
             this.cal_main.LineTop = 3;
@@ -285,9 +295,9 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(12, 14);
+            this.pictureBox6.Location = new System.Drawing.Point(3, 3);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(164, 112);
+            this.pictureBox6.Size = new System.Drawing.Size(189, 134);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 1;
             this.pictureBox6.TabStop = false;
@@ -331,7 +341,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // gunaAdvenceButton2
             // 
@@ -452,23 +461,12 @@
             // 
             // controlpanel
             // 
+            this.controlpanel.BackColor = System.Drawing.SystemColors.Control;
             this.controlpanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.controlpanel.Location = new System.Drawing.Point(0, 143);
             this.controlpanel.Name = "controlpanel";
             this.controlpanel.Size = new System.Drawing.Size(924, 426);
             this.controlpanel.TabIndex = 110;
-            this.controlpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.controlpanel_Paint);
-            // 
-            // welcome
-            // 
-            this.welcome.AutoSize = true;
-            this.welcome.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold);
-            this.welcome.ForeColor = System.Drawing.Color.White;
-            this.welcome.Location = new System.Drawing.Point(298, 14);
-            this.welcome.Name = "welcome";
-            this.welcome.Size = new System.Drawing.Size(171, 23);
-            this.welcome.TabIndex = 84;
-            this.welcome.Text = "Welcome, Faisal";
             // 
             // Form1
             // 

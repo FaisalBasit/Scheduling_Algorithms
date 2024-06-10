@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
-
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -68,14 +67,14 @@ namespace OS_project
                 {
                     int usernameIndex = dr.GetOrdinal("username");
                     int nameIndex = dr.GetOrdinal("name"); // Retrieve the index of the "name" column
-
+                    int paidIndex = dr.GetOrdinal("paid");
 
 
                     while (dr.Read())
                     {
                         string username = dr.GetString(usernameIndex);
                         string name = dr.GetString(nameIndex);
-
+                        string paid=dr.GetString(paidIndex);
 
 
 
@@ -85,7 +84,9 @@ namespace OS_project
                         Form1 mainForm = new Form1
                         {
                             username1 = username,
-                            name1 = name
+                            name1 = name,
+                            paid1=paid
+
                         };
 
                         mainForm.Show();
@@ -113,6 +114,11 @@ namespace OS_project
             sign_up su = new sign_up();
             su.Show();
             this.Hide();
+        }
+
+        private void username_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

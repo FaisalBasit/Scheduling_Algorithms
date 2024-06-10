@@ -28,3 +28,23 @@ D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.st
 D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.Upgrade.resources
 D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.sign_up.resources
 D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.signin.resources
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\bin\Debug\OS project.exe.config
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\bin\Debug\OS project.exe
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\bin\Debug\OS project.pdb
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS project.csproj.AssemblyReference.cache
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS_project.Calculate.resources
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS_project.Form1.resources
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS_project.home.resources
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS_project.Properties.Resources.resources
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS_project.Review.resources
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS_project.sign_up.resources
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS_project.signin.resources
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS_project.steps.resources
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS_project.Upgrade.resources
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS project.csproj.GenerateResource.cache
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS project.csproj.CoreCompileInputs.cache
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS project.csproj.CopyComplete
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS project.exe
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS project.pdb
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\bin\Debug\Guna.UI2.dll
+D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.pro.resources

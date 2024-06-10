@@ -7,11 +7,15 @@ CREATE TABLE users (
     pass VARCHAR(255) NOT NULL, 
     cardnum VARCHAR(16) NULL, 
     cardexpirydate DATE NULL,
-    cvv INT CHECK (cvv >= 100 AND cvv <= 999) NULL 
+    cvv INT CHECK (cvv >= 100 AND cvv <= 999) NULL,
+	feedback Varchar(500) NULL
 );
+
+drop table users
 
 
 select * from users
 
-insert into users values('faisal159','Faisal','123',null,null,null);
+insert into users values('faisal159','Faisal','123',null,null,null,null);
 
+delete from users

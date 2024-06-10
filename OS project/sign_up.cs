@@ -71,12 +71,13 @@ namespace OS_project
                         }
                         else
                         {
-                            string insertQuery = "INSERT INTO users (name, username, pass) VALUES (@name, @username, @pass)";
+                            string insertQuery = "INSERT INTO users (name, username, pass,paid) VALUES (@name, @username, @pass,@paid)";
                             using (SqlCommand insertCmd = new SqlCommand(insertQuery, con))
                             {
                                 insertCmd.Parameters.AddWithValue("@name", name.Text.Trim());
                                 insertCmd.Parameters.AddWithValue("@username", username.Text.Trim());
                                 insertCmd.Parameters.AddWithValue("@pass", pass.Text.Trim());
+                                insertCmd.Parameters.AddWithValue("@paid", "no");
 
                                 insertCmd.ExecuteNonQuery();
 

@@ -210,6 +210,7 @@
             this.username.Radius = 10;
             this.username.Size = new System.Drawing.Size(221, 27);
             this.username.TabIndex = 113;
+            this.username.Click += new System.EventHandler(this.username_Click);
             // 
             // label
             // 

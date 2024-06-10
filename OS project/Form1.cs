@@ -19,12 +19,15 @@ namespace OS_project
         public Form1()
         {
             InitializeComponent();
+            //var calculateInstance = new Calculate();
+            //this.Controls.Add(calculateInstance);
 
         }
 
         public string name1 { get; set; }
         public string username1 { get; set; }
-        private void addUserControl(UserControl userControl)
+        public string paid1 { get; set; }
+        public void addUserControl(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
             controlpanel.Controls.Clear();
@@ -32,11 +35,31 @@ namespace OS_project
             userControl.BringToFront();
         }
 
+        public void ShowUpgrade()
+        {
+            Upgrade cal = new Upgrade();
+            addUserControl(cal);
+        }
+        public void ShowSteps()
+        {
+            steps stepsControl = new steps();
+            addUserControl(stepsControl);
+        }
+        public void pro()
+        {
+            pro p = new pro
+            {
+                username = username1,
+                paid = paid1
+            };
+
+
+        }
 
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -62,6 +85,12 @@ namespace OS_project
         {
             Calculate cal = new Calculate();
             addUserControl(cal);
+            Calculate r = new Calculate
+            {
+                username = username1,
+                paid=paid1
+            };
+            addUserControl(r);
 
         }
 
@@ -69,12 +98,23 @@ namespace OS_project
         {
             Upgrade cal = new Upgrade();
             addUserControl(cal);
+            Upgrade r = new Upgrade
+            {
+                username = username1,
+                paid = paid1
+            };
+            addUserControl(r);
         }
 
         private void Review_main_Click(object sender, EventArgs e)
         {
             Review cal = new Review();
             addUserControl(cal);
+            Review r = new Review
+            {
+                username = username1
+            };
+            addUserControl(r);
 
         }
 
@@ -84,7 +124,7 @@ namespace OS_project
             if (check == DialogResult.Yes)
             {
                 Application.Exit();
-             
+
             }
         }
 
@@ -104,16 +144,5 @@ namespace OS_project
                 this.Close();
             }
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void controlpanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
     }
 }
