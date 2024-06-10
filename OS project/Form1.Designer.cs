@@ -106,6 +106,17 @@
             this.welcome.TabIndex = 84;
             this.welcome.Text = "Welcome, Faisal";
             // 
+            // welcome
+            // 
+            this.welcome.AutoSize = true;
+            this.welcome.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold);
+            this.welcome.ForeColor = System.Drawing.Color.White;
+            this.welcome.Location = new System.Drawing.Point(298, 14);
+            this.welcome.Name = "welcome";
+            this.welcome.Size = new System.Drawing.Size(171, 23);
+            this.welcome.TabIndex = 84;
+            this.welcome.Text = "Welcome, Faisal";
+            // 
             // home
             // 
             this.home.AnimationHoverSpeed = 0.07F;
@@ -467,6 +478,10 @@
             this.controlpanel.Name = "controlpanel";
             this.controlpanel.Size = new System.Drawing.Size(924, 426);
             this.controlpanel.TabIndex = 110;
+<<<<<<< HEAD
+=======
+            this.controlpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.controlpanel_Paint);
+>>>>>>> 53ee78b6011010c111426679d260da559a30943a
             // 
             // Form1
             // 

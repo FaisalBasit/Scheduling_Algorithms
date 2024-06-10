@@ -105,6 +105,8 @@ namespace OS_project
             DialogResult check = MessageBox.Show("Are you sure you want to exit?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (check == DialogResult.Yes)
             {
+                signin si = new signin();
+                si.Show();
                 this.Close();
             }
         }

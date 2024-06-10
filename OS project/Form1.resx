@@ -121,7 +121,11 @@
   <data name="home.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+<<<<<<< HEAD
         vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGxSURBVFhH7Za7
+=======
+        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGxSURBVFhH7Za7
+>>>>>>> 53ee78b6011010c111426679d260da559a30943a
         SgNRFEWjMYqKgiCSH0jjCxELifbGIlUIahDxDyyt7CV+gYoELW3sbLSysPAHtLBQEAVtLHyBj3EdsnWU
         TN4zhZIFCzL7nHvunRkCE2pQC47jNGECV+SUZSoHCxvF8Bjf8RTP9NuymNqCgQ2SeI8nOKTY8mFlVksq
         9g+G2iNfRrvTHWxX6RuyNtzAD1zFZpXqg0HduIcvuKS4KPQs4BPuY4/i2mCAPdpzvMJxxWWhdxQv8BLH
@@ -135,7 +139,11 @@
   <data name="home.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+<<<<<<< HEAD
         vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGxSURBVFhH7Za7
+=======
+        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGxSURBVFhH7Za7
+>>>>>>> 53ee78b6011010c111426679d260da559a30943a
         SgNRFEWjMYqKgiCSH0jjCxELifbGIlUIahDxDyyt7CV+gYoELW3sbLSysPAHtLBQEAVtLHyBj3EdsnWU
         TN4zhZIFCzL7nHvunRkCE2pQC47jNGECV+SUZSoHCxvF8Bjf8RTP9NuymNqCgQ2SeI8nOKTY8mFlVksq
         9g+G2iNfRrvTHWxX6RuyNtzAD1zFZpXqg0HduIcvuKS4KPQs4BPuY4/i2mCAPdpzvMJxxWWhdxQv8BLH
@@ -149,7 +157,11 @@
   <data name="home.OnHoverImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+<<<<<<< HEAD
         vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGxSURBVFhH7Za7
+=======
+        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGxSURBVFhH7Za7
+>>>>>>> 53ee78b6011010c111426679d260da559a30943a
         SgNRFEWjMYqKgiCSH0jjCxELifbGIlUIahDxDyyt7CV+gYoELW3sbLSysPAHtLBQEAVtLHyBj3EdsnWU
         TN4zhZIFCzL7nHvunRkCE2pQC47jNGECV+SUZSoHCxvF8Bjf8RTP9NuymNqCgQ2SeI8nOKTY8mFlVksq
         9g+G2iNfRrvTHWxX6RuyNtzAD1zFZpXqg0HduIcvuKS4KPQs4BPuY4/i2mCAPdpzvMJxxWWhdxQv8BLH

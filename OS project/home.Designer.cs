@@ -41,7 +41,11 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(924, 426);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+<<<<<<< HEAD
             this.pictureBox1.TabIndex = 1;
+=======
+            this.pictureBox1.TabIndex = 0;
+>>>>>>> 53ee78b6011010c111426679d260da559a30943a
             this.pictureBox1.TabStop = false;
             // 
             // home
