@@ -1,0 +1,22 @@
+For example:
+
+Union Card:
+
+Card Number: 1234 5678 9012 3456
+CVV: 123
+Expiry Date: 06/25
+Visa Card:
+
+Card Number: 4111 1111 1111 1111
+CVV: 123
+Expiry Date: 12/25
+Visa Master Card:
+
+Card Number: 5105 1051 0510 5100
+CVV: 123
+Expiry Date: 09/26
+Mastercard:
+
+Card Number: 5500 0000 0000 0004
+CVV: 123
+Expiry Date: 03/27

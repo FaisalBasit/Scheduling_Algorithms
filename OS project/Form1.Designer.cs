@@ -76,6 +76,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(924, 143);
             this.panel1.TabIndex = 0;
+            //this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -94,6 +95,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(924, 162);
             this.panel2.TabIndex = 83;
+           // this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // welcome
             // 
@@ -105,17 +107,7 @@
             this.welcome.Size = new System.Drawing.Size(171, 23);
             this.welcome.TabIndex = 84;
             this.welcome.Text = "Welcome, Faisal";
-            // 
-            // welcome
-            // 
-            this.welcome.AutoSize = true;
-            this.welcome.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold);
-            this.welcome.ForeColor = System.Drawing.Color.White;
-            this.welcome.Location = new System.Drawing.Point(298, 14);
-            this.welcome.Name = "welcome";
-            this.welcome.Size = new System.Drawing.Size(171, 23);
-            this.welcome.TabIndex = 84;
-            this.welcome.Text = "Welcome, Faisal";
+           // this.welcome.Click += new System.EventHandler(this.welcome_Click);
             // 
             // home
             // 
@@ -302,6 +294,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
+           // this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox6
             // 
@@ -312,6 +305,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 1;
             this.pictureBox6.TabStop = false;
+           // this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // gunaAdvenceButton3
             // 
@@ -342,6 +336,7 @@
             this.gunaAdvenceButton3.TabIndex = 1;
             this.gunaAdvenceButton3.Text = "Login";
             this.gunaAdvenceButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+          //  this.gunaAdvenceButton3.Click += new System.EventHandler(this.gunaAdvenceButton3_Click);
             // 
             // pictureBox3
             // 
@@ -352,6 +347,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // gunaAdvenceButton2
             // 
@@ -384,6 +380,7 @@
             this.gunaAdvenceButton2.Size = new System.Drawing.Size(145, 48);
             this.gunaAdvenceButton2.TabIndex = 82;
             this.gunaAdvenceButton2.Text = "Review";
+            //this.gunaAdvenceButton2.Click += new System.EventHandler(this.gunaAdvenceButton2_Click);
             // 
             // gunaAdvenceButton1
             // 
@@ -416,6 +413,7 @@
             this.gunaAdvenceButton1.Size = new System.Drawing.Size(145, 48);
             this.gunaAdvenceButton1.TabIndex = 81;
             this.gunaAdvenceButton1.Text = "Upgrade";
+           // this.gunaAdvenceButton1.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
             // 
             // Dashboard_Button
             // 
@@ -449,6 +447,7 @@
             this.Dashboard_Button.Size = new System.Drawing.Size(145, 48);
             this.Dashboard_Button.TabIndex = 80;
             this.Dashboard_Button.Text = "Calculate";
+           // this.Dashboard_Button.Click += new System.EventHandler(this.Dashboard_Button_Click);
             // 
             // pictureBox2
             // 
@@ -459,6 +458,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            //this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -469,19 +469,16 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+           // this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // controlpanel
             // 
-            this.controlpanel.BackColor = System.Drawing.SystemColors.Control;
             this.controlpanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.controlpanel.Location = new System.Drawing.Point(0, 143);
             this.controlpanel.Name = "controlpanel";
             this.controlpanel.Size = new System.Drawing.Size(924, 426);
             this.controlpanel.TabIndex = 110;
-<<<<<<< HEAD
-=======
-            this.controlpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.controlpanel_Paint);
->>>>>>> 53ee78b6011010c111426679d260da559a30943a
+           // this.controlpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.controlpanel_Paint);
             // 
             // Form1
             // 
