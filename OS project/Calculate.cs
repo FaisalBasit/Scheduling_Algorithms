@@ -14,6 +14,7 @@ using System.Configuration;
 using System.Data.SqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Collections;
+using System.Linq.Expressions;
 
 namespace OS_project
 {
@@ -22,7 +23,7 @@ namespace OS_project
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["EMS"].ConnectionString);
 
-        private steps stepInstance;
+        public steps stepInstance;
 
         public string username { get; set; }
         public string paid { get; set; }
@@ -38,7 +39,7 @@ namespace OS_project
         List<Process> Process_List = new List<Process>(), ganttChart = new List<Process>();
         List<int> Arrival_time = new List<int>(); List<int> burst_time = new List<int>();
         List<int> flag = new List<int>(); List<int> service_time = new List<int>();
-        int Process_ID, Process_Priorty, Process_Arrival, Process_Quantum, pervAlgo;
+        int Process_ID, Process_Arrival;
         int Process_Burst, X = 16, t = 0, Y = 16, temp = 0, sum = 0;
 
         private void Clear_process_Click(object sender, EventArgs e)
@@ -47,8 +48,8 @@ namespace OS_project
             if (dialog == DialogResult.Yes)
             {
                 total_turnAround_time = total_waiting_time = 0; X = Y = 16; temp = sum = t = Process_Burst = 0;
-                complete = 0; shortest = 0; finish_time = 0; minimum = 0; insert = checke = false;
-                Process_List.Clear(); ganttChart.Clear(); flag.Clear(); pervAlgo = 0;
+                insert = checke = false;
+                Process_List.Clear(); ganttChart.Clear(); flag.Clear();
                 burst_time.Clear(); Arrival_time.Clear(); service_time.Clear();
                 cal_display1.Rows.Clear();
                 cal_display1.Refresh();
@@ -77,18 +78,21 @@ namespace OS_project
                         cmd.Parameters.AddWithValue("@username", username);
                         string paidStatus = (string)cmd.ExecuteScalar();
 
-                        Form1 parentForm = this.FindForm() as Form1;
-                        if (parentForm != null)
+                        if (paidStatus == "yes")
                         {
-                            if (paidStatus == "yes")
+                            // Proceed to show the steps form
+                            if (Process_List.Count > 0)
                             {
-                                parentForm.ShowSteps();
+                                stepInstance.Show();
                             }
                             else
                             {
-                                //parentForm.ShowUpgrade();
-                                MessageBox.Show("Upgrade to pro", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Please insert and calculate process first", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Upgrade to pro", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }
@@ -102,12 +106,12 @@ namespace OS_project
                 }
             }
         }
-       
 
 
+        private void AverageTAT_Click(object sender, EventArgs e)
+        {
 
-
-        
+        }
 
         private void show_steps_Click(object sender, EventArgs e)
         {
@@ -126,7 +130,7 @@ namespace OS_project
         }
         bool checke = false; bool insert = false; // check for same Process IDs
 
-        int complete = 0, shortest = 0, finish_time, minimum;
+       
         float total_waiting_time = 0f, total_turnAround_time = 0f;
         string[] row = new string[20]; // for displaying the result
         private void Add_Process_Click(object sender, EventArgs e)
@@ -151,7 +155,7 @@ namespace OS_project
             }
             else
             {
-                Process_List.Add(new Process(Process_ID, Process_Burst, Process_Arrival, Process_Priorty));
+                Process_List.Add(new Process(Process_ID, Process_Burst, Process_Arrival));
                 row = new[]
                             {
                               Convert.ToString(Process_List[Process_List.Count - 1].P_id),
@@ -186,7 +190,7 @@ namespace OS_project
                      Convert.ToString(Process_List[i].P_id),
                      Convert.ToString(Process_List[i].arrival_time),
                      Convert.ToString(Process_List[i].burst_time),
-                     Convert.ToString(Process_List[i].compeletion_time),
+                     Convert.ToString(Process_List[i].completion_time),
                      Convert.ToString(Process_List[i].PturnAround_time),
                      Convert.ToString(Process_List[i].Pwaiting_time)
                  };
@@ -215,6 +219,10 @@ namespace OS_project
             }
             Process_List[0].Pwaiting_time = 0;
             Process_List[0].PturnAround_time = Process_List[0].burst_time;
+            Process_List[0].completion_time = Process_List[0].arrival_time + Process_List[0].PturnAround_time;
+
+            stepInstance.DisplayProcessDetails(Process_List[0], 0); // Display details for the first process
+           
             // calculating waiting time  
 
             for (int i = 1; i < n; i++)
@@ -222,6 +230,7 @@ namespace OS_project
                 // Add burst time of previous processes
                 service_time[i] = service_time[i - 1] + Process_List[i - 1].burst_time;
 
+                
                 //Find waiting time for current process =
                 //sum - at[i];
 
@@ -232,6 +241,9 @@ namespace OS_project
                 {
                     Process_List[i].Pwaiting_time = 0;
                 }
+                Process_List[i].completion_time = Process_List[i].arrival_time + Process_List[i].PturnAround_time;
+
+                stepInstance.DisplayProcessDetails(Process_List[i], i); // Display details for each process
 
                 //stepInstance.Show();
                 //stepInstance.MyFunction();
@@ -266,6 +278,7 @@ namespace OS_project
 
             for (int j = 0; j < n; j++)
             {
+
                 total_waiting_time += Process_List[j].Pwaiting_time;
                 total_turnAround_time += Process_List[j].PturnAround_time;
             }

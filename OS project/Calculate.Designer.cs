@@ -38,20 +38,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cal = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.BurstTime = new Guna.UI.WinForms.GunaTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.ArrivalTime = new Guna.UI.WinForms.GunaTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Add_Process = new Guna.UI.WinForms.GunaAdvenceButton();
             this.Clear_process = new Guna.UI.WinForms.GunaAdvenceButton();
             this.processid = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.AverageTAT = new Guna.UI.WinForms.GunaTextBox();
-            this.AverageWT = new Guna.UI.WinForms.GunaTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
             this.cal_display2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,11 +61,20 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.show_steps = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.AverageTAT = new Guna.UI.WinForms.GunaTextBox();
+            this.AverageWT = new Guna.UI.WinForms.GunaTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.ArrivalTime = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.BurstTime = new Guna.UI2.WinForms.Guna2NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.processid)).BeginInit();
-            this.gunaElipsePanel1.SuspendLayout();
             this.gunaElipsePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cal_display2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cal_display1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ArrivalTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BurstTime)).BeginInit();
             this.SuspendLayout();
             // 
             // cal
@@ -110,53 +111,17 @@
             this.cal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cal.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
             // 
-            // BurstTime
-            // 
-            this.BurstTime.BackColor = System.Drawing.Color.Transparent;
-            this.BurstTime.BaseColor = System.Drawing.Color.White;
-            this.BurstTime.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.BurstTime.BorderSize = 2;
-            this.BurstTime.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.BurstTime.FocusedBaseColor = System.Drawing.Color.White;
-            this.BurstTime.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.BurstTime.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.BurstTime.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BurstTime.Location = new System.Drawing.Point(485, 41);
-            this.BurstTime.Name = "BurstTime";
-            this.BurstTime.PasswordChar = '\0';
-            this.BurstTime.Radius = 10;
-            this.BurstTime.Size = new System.Drawing.Size(191, 27);
-            this.BurstTime.TabIndex = 116;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
-            this.label3.Location = new System.Drawing.Point(482, 22);
+            this.label3.Location = new System.Drawing.Point(479, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 16);
             this.label3.TabIndex = 117;
             this.label3.Text = "Burst Time";
-            // 
-            // ArrivalTime
-            // 
-            this.ArrivalTime.BackColor = System.Drawing.Color.Transparent;
-            this.ArrivalTime.BaseColor = System.Drawing.Color.White;
-            this.ArrivalTime.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.ArrivalTime.BorderSize = 2;
-            this.ArrivalTime.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ArrivalTime.FocusedBaseColor = System.Drawing.Color.White;
-            this.ArrivalTime.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.ArrivalTime.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.ArrivalTime.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ArrivalTime.Location = new System.Drawing.Point(268, 40);
-            this.ArrivalTime.Name = "ArrivalTime";
-            this.ArrivalTime.PasswordChar = '\0';
-            this.ArrivalTime.Radius = 10;
-            this.ArrivalTime.Size = new System.Drawing.Size(191, 27);
-            this.ArrivalTime.TabIndex = 114;
             // 
             // label2
             // 
@@ -164,7 +129,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
-            this.label2.Location = new System.Drawing.Point(265, 21);
+            this.label2.Location = new System.Drawing.Point(260, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 16);
             this.label2.TabIndex = 115;
@@ -269,101 +234,21 @@
             this.processid.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.processid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.processid.Location = new System.Drawing.Point(42, 40);
+            this.processid.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.processid.Name = "processid";
             this.processid.ShadowDecoration.Parent = this.processid;
             this.processid.Size = new System.Drawing.Size(191, 27);
             this.processid.TabIndex = 129;
             this.processid.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(63)))), ((int)(((byte)(89)))));
-            // 
-            // gunaElipsePanel1
-            // 
-            this.gunaElipsePanel1.BaseColor = System.Drawing.Color.White;
-            this.gunaElipsePanel1.Controls.Add(this.AverageTAT);
-            this.gunaElipsePanel1.Controls.Add(this.AverageWT);
-            this.gunaElipsePanel1.Controls.Add(this.label6);
-            this.gunaElipsePanel1.Controls.Add(this.label7);
-            this.gunaElipsePanel1.Controls.Add(this.label5);
-            this.gunaElipsePanel1.ForeColor = System.Drawing.Color.White;
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(570, 139);
-            this.gunaElipsePanel1.Name = "gunaElipsePanel1";
-            this.gunaElipsePanel1.Radius = 15;
-            this.gunaElipsePanel1.Size = new System.Drawing.Size(321, 223);
-            this.gunaElipsePanel1.TabIndex = 132;
-            // 
-            // AverageTAT
-            // 
-            this.AverageTAT.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.AverageTAT.BackColor = System.Drawing.Color.Transparent;
-            this.AverageTAT.BaseColor = System.Drawing.Color.White;
-            this.AverageTAT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.AverageTAT.BorderSize = 2;
-            this.AverageTAT.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AverageTAT.FocusedBaseColor = System.Drawing.Color.White;
-            this.AverageTAT.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.AverageTAT.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.AverageTAT.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.AverageTAT.Location = new System.Drawing.Point(27, 75);
-            this.AverageTAT.Name = "AverageTAT";
-            this.AverageTAT.PasswordChar = '\0';
-            this.AverageTAT.Radius = 10;
-            this.AverageTAT.ReadOnly = true;
-            this.AverageTAT.Size = new System.Drawing.Size(191, 27);
-            this.AverageTAT.TabIndex = 143;
-            // 
-            // AverageWT
-            // 
-            this.AverageWT.BackColor = System.Drawing.Color.Transparent;
-            this.AverageWT.BaseColor = System.Drawing.Color.White;
-            this.AverageWT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.AverageWT.BorderSize = 2;
-            this.AverageWT.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AverageWT.FocusedBaseColor = System.Drawing.Color.White;
-            this.AverageWT.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.AverageWT.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.AverageWT.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.AverageWT.Location = new System.Drawing.Point(29, 135);
-            this.AverageWT.Name = "AverageWT";
-            this.AverageWT.PasswordChar = '\0';
-            this.AverageWT.Radius = 10;
-            this.AverageWT.ReadOnly = true;
-            this.AverageWT.Size = new System.Drawing.Size(191, 27);
-            this.AverageWT.TabIndex = 141;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
-            this.label6.Location = new System.Drawing.Point(24, 116);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 16);
-            this.label6.TabIndex = 142;
-            this.label6.Text = "Average Waiting Time";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
-            this.label7.Location = new System.Drawing.Point(24, 56);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(176, 16);
-            this.label7.TabIndex = 140;
-            this.label7.Text = "Average TurnAround Time";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
-            this.label5.Location = new System.Drawing.Point(23, 5);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 23);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Average Time";
+            this.processid.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // gunaElipsePanel2
             // 
@@ -588,20 +473,148 @@
             this.show_steps.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.show_steps.Click += new System.EventHandler(this.show_steps_Click_1);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.AverageTAT);
+            this.groupBox1.Controls.Add(this.AverageWT);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
+            this.groupBox1.Location = new System.Drawing.Point(580, 139);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(304, 223);
+            this.groupBox1.TabIndex = 133;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Average Time";
+            // 
+            // AverageTAT
+            // 
+            this.AverageTAT.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.AverageTAT.BackColor = System.Drawing.Color.Transparent;
+            this.AverageTAT.BaseColor = System.Drawing.Color.White;
+            this.AverageTAT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
+            this.AverageTAT.BorderSize = 2;
+            this.AverageTAT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AverageTAT.FocusedBaseColor = System.Drawing.Color.White;
+            this.AverageTAT.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.AverageTAT.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.AverageTAT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.AverageTAT.Location = new System.Drawing.Point(47, 79);
+            this.AverageTAT.Name = "AverageTAT";
+            this.AverageTAT.PasswordChar = '\0';
+            this.AverageTAT.Radius = 10;
+            this.AverageTAT.ReadOnly = true;
+            this.AverageTAT.Size = new System.Drawing.Size(86, 33);
+            this.AverageTAT.TabIndex = 139;
+            // 
+            // AverageWT
+            // 
+            this.AverageWT.BackColor = System.Drawing.Color.Transparent;
+            this.AverageWT.BaseColor = System.Drawing.Color.White;
+            this.AverageWT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
+            this.AverageWT.BorderSize = 2;
+            this.AverageWT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AverageWT.FocusedBaseColor = System.Drawing.Color.White;
+            this.AverageWT.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.AverageWT.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.AverageWT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.AverageWT.Location = new System.Drawing.Point(49, 139);
+            this.AverageWT.Name = "AverageWT";
+            this.AverageWT.PasswordChar = '\0';
+            this.AverageWT.Radius = 10;
+            this.AverageWT.ReadOnly = true;
+            this.AverageWT.Size = new System.Drawing.Size(84, 34);
+            this.AverageWT.TabIndex = 137;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
+            this.label5.Location = new System.Drawing.Point(44, 120);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(155, 16);
+            this.label5.TabIndex = 138;
+            this.label5.Text = "Average Waiting Time:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
+            this.label6.Location = new System.Drawing.Point(44, 60);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(180, 16);
+            this.label6.TabIndex = 136;
+            this.label6.Text = "Average TurnAround Time:";
+            // 
+            // ArrivalTime
+            // 
+            this.ArrivalTime.BackColor = System.Drawing.Color.Transparent;
+            this.ArrivalTime.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
+            this.ArrivalTime.BorderRadius = 9;
+            this.ArrivalTime.BorderThickness = 2;
+            this.ArrivalTime.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ArrivalTime.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ArrivalTime.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ArrivalTime.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ArrivalTime.DisabledState.Parent = this.ArrivalTime;
+            this.ArrivalTime.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.ArrivalTime.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.ArrivalTime.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.ArrivalTime.FocusedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ArrivalTime.FocusedState.Parent = this.ArrivalTime;
+            this.ArrivalTime.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ArrivalTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.ArrivalTime.Location = new System.Drawing.Point(263, 41);
+            this.ArrivalTime.Name = "ArrivalTime";
+            this.ArrivalTime.ShadowDecoration.Parent = this.ArrivalTime;
+            this.ArrivalTime.Size = new System.Drawing.Size(191, 27);
+            this.ArrivalTime.TabIndex = 134;
+            this.ArrivalTime.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(63)))), ((int)(((byte)(89)))));
+            // 
+            // BurstTime
+            // 
+            this.BurstTime.BackColor = System.Drawing.Color.Transparent;
+            this.BurstTime.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
+            this.BurstTime.BorderRadius = 9;
+            this.BurstTime.BorderThickness = 2;
+            this.BurstTime.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.BurstTime.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.BurstTime.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.BurstTime.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.BurstTime.DisabledState.Parent = this.BurstTime;
+            this.BurstTime.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.BurstTime.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.BurstTime.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.BurstTime.FocusedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BurstTime.FocusedState.Parent = this.BurstTime;
+            this.BurstTime.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BurstTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.BurstTime.Location = new System.Drawing.Point(482, 41);
+            this.BurstTime.Name = "BurstTime";
+            this.BurstTime.ShadowDecoration.Parent = this.BurstTime;
+            this.BurstTime.Size = new System.Drawing.Size(191, 27);
+            this.BurstTime.TabIndex = 135;
+            this.BurstTime.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(63)))), ((int)(((byte)(89)))));
+            // 
             // Calculate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.gunaElipsePanel1);
+            this.Controls.Add(this.BurstTime);
+            this.Controls.Add(this.ArrivalTime);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gunaElipsePanel2);
             this.Controls.Add(this.show_steps);
             this.Controls.Add(this.processid);
             this.Controls.Add(this.Clear_process);
             this.Controls.Add(this.cal);
-            this.Controls.Add(this.BurstTime);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.ArrivalTime);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Add_Process);
@@ -609,12 +622,14 @@
             this.Size = new System.Drawing.Size(924, 426);
             this.Load += new System.EventHandler(this.Calculate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.processid)).EndInit();
-            this.gunaElipsePanel1.ResumeLayout(false);
-            this.gunaElipsePanel1.PerformLayout();
             this.gunaElipsePanel2.ResumeLayout(false);
             this.gunaElipsePanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cal_display2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cal_display1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ArrivalTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BurstTime)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -623,20 +638,12 @@
         #endregion
 
         private Guna.UI.WinForms.GunaAdvenceButton cal;
-        private Guna.UI.WinForms.GunaTextBox BurstTime;
         private System.Windows.Forms.Label label3;
-        private Guna.UI.WinForms.GunaTextBox ArrivalTime;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Guna.UI.WinForms.GunaAdvenceButton Add_Process;
         private Guna.UI.WinForms.GunaAdvenceButton Clear_process;
         private Guna.UI2.WinForms.Guna2NumericUpDown processid;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
-        private Guna.UI.WinForms.GunaTextBox AverageTAT;
-        private Guna.UI.WinForms.GunaTextBox AverageWT;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel2;
         private System.Windows.Forms.DataGridView cal_display2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
@@ -654,5 +661,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private Guna.UI.WinForms.GunaAdvenceButton show_steps;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private Guna.UI.WinForms.GunaTextBox AverageTAT;
+        private Guna.UI.WinForms.GunaTextBox AverageWT;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2NumericUpDown ArrivalTime;
+        private Guna.UI2.WinForms.Guna2NumericUpDown BurstTime;
     }
 }

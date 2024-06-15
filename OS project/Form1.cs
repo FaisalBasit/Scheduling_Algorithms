@@ -16,6 +16,8 @@ namespace OS_project
 {
     public partial class Form1 : Form
     {
+        private Calculate calculateControl;
+        private steps stepsControl;
         public Form1()
         {
             InitializeComponent();
@@ -40,11 +42,32 @@ namespace OS_project
             Upgrade cal = new Upgrade();
             addUserControl(cal);
         }
-        public void ShowSteps()
+        /*public void ShowSteps()
         {
             steps stepsControl = new steps();
             addUserControl(stepsControl);
+          
+            steps r = new steps
+            {
+                username = username1,
+               
+            };
+            addUserControl(r);
         }
+        */
+        public void ShowCalculate()
+        {
+            Calculate stepsControl = new Calculate();
+            addUserControl(stepsControl);
+            Calculate r = new Calculate
+            {
+                username = username1,
+                paid = paid1
+            };
+            addUserControl(r);
+
+        }
+
         public void pro()
         {
             pro p = new pro
@@ -81,7 +104,7 @@ namespace OS_project
 
         }
 
-        private void cal_main_Click(object sender, EventArgs e)
+        public void cal_main_Click(object sender, EventArgs e)
         {
             Calculate cal = new Calculate();
             addUserControl(cal);

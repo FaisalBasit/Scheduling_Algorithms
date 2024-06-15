@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace OS_project
 {
-    public partial class steps : UserControl
+    public partial class steps : Form
     {
 
         public steps()
@@ -19,11 +19,29 @@ namespace OS_project
         }
         int Process_Burst, X = 16, t = 0, Y = 16, temp = 0, sum = 0;
 
-        private void GanttChart_Enter(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
 
+        private void back_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Calculate cal = new Calculate();
+            cal.Show();
+        }
+
+        private void GanttChart_Enter(object sender, EventArgs e)
+        {
+
+        }
+        public void DisplayProcessDetails(Process process, int index)
+        {
+            string stepDetails = $"Process {process.P_id}:      " +
+                                 $"Waiting Time = ( Turnaround Time - Burst Time ) = {process.Pwaiting_time}      " +
+                                 $"Turnaround Time = ( Completion Time - Arrival Time ) = {process.PturnAround_time}";
+            stepsListBox.Items.Add(stepDetails);
+        }
         public void printGanttChart(List<Process> ganttChart)
         {
             int num = 0;
@@ -49,7 +67,7 @@ namespace OS_project
                         textBox2.Size = new System.Drawing.Size(25, 25);
                         textBox2.BackColor = ganttChart[num].process_color;
                         textBox2.Location = new System.Drawing.Point(Y, 38);
-                        textBox2.Text = (num.ToString());
+                        textBox2.Text = ((num).ToString());
 
                         System.Windows.Forms.TextBox textBox5 = new System.Windows.Forms.TextBox();
                         GanttChart.Controls.Add(textBox5);
@@ -74,13 +92,13 @@ namespace OS_project
                     else
                         textBox7.BackColor = ganttChart[num].process_color;
                     textBox7.Location = new System.Drawing.Point(Y, 38);
-                    textBox7.Text = (num.ToString());
+                    textBox7.Text = ((num).ToString());
                 }
             }
         }
         private void steps_Load(object sender, EventArgs e)
         {
-
+      
         }
     }
 }

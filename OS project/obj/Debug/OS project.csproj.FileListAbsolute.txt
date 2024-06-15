@@ -48,3 +48,4 @@ D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS
 D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS project.pdb
 D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\bin\Debug\Guna.UI2.dll
 D:\sir syed(3)\4rd Semester\FCFS (OS project)\OS project\obj\Debug\OS_project.pro.resources
+D:\Computer Science(CS)\4rd Semester\Operating Systems (OS)\FCFS (OS project)\OS project\obj\Debug\OS_project.pro.resources

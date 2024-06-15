@@ -176,10 +176,11 @@
             this.pass.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.pass.Location = new System.Drawing.Point(47, 251);
             this.pass.Name = "pass";
-            this.pass.PasswordChar = '\0';
+            this.pass.PasswordChar = '●';
             this.pass.Radius = 10;
             this.pass.Size = new System.Drawing.Size(221, 27);
             this.pass.TabIndex = 116;
+            this.pass.UseSystemPasswordChar = true;
             // 
             // label2
             // 

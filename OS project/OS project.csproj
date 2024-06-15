@@ -101,7 +101,7 @@
       <DependentUpon>signin.cs</DependentUpon>
     </Compile>
     <Compile Include="steps.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="steps.Designer.cs">
       <DependentUpon>steps.cs</DependentUpon>
