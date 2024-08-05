@@ -1,0 +1,25 @@
+1) UnionPay: UnionPay card numbers typically start with 62 and are between 16 and 19 digits long.
+
+Example: 6212345678901234
+
+2) Visa: Visa card numbers start with a 4 and are either 13 or 16 digits long.
+
+Example: 4111111111111111
+
+3) Visa Master: This regex covers both Visa and MasterCard numbers.
+Visa Example: 4111111111111111
+
+MasterCard Example: 5500000000000004
+
+4) MasterCard: MasterCard numbers start with 51 through 55 or with 2221 through 2720 and are 16 digits long.
+
+Example: 5105105105105100
+Example: 2221000000000009
+
+
+CVV: 123
+
+
+Expiry Date: 03/27
+Expiry Date: 12/25
+Expiry Date: 09/26

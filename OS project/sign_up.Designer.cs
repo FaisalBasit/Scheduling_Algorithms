@@ -78,7 +78,7 @@
             this.username.PasswordChar = '\0';
             this.username.Radius = 10;
             this.username.Size = new System.Drawing.Size(221, 27);
-            this.username.TabIndex = 122;
+            this.username.TabIndex = 2;
             // 
             // label3
             // 
@@ -153,7 +153,7 @@
             this.pass.PasswordChar = '\0';
             this.pass.Radius = 10;
             this.pass.Size = new System.Drawing.Size(221, 27);
-            this.pass.TabIndex = 116;
+            this.pass.TabIndex = 3;
             // 
             // label2
             // 
@@ -183,7 +183,7 @@
             this.name.PasswordChar = '\0';
             this.name.Radius = 10;
             this.name.Size = new System.Drawing.Size(221, 27);
-            this.name.TabIndex = 113;
+            this.name.TabIndex = 1;
             // 
             // label
             // 

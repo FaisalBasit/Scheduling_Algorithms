@@ -99,7 +99,7 @@
             this.CardExpiry.PasswordChar = '\0';
             this.CardExpiry.Radius = 10;
             this.CardExpiry.Size = new System.Drawing.Size(221, 27);
-            this.CardExpiry.TabIndex = 130;
+            this.CardExpiry.TabIndex = 3;
             // 
             // pictureBox2
             // 
@@ -149,11 +149,12 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
-            this.label4.Location = new System.Drawing.Point(218, 284);
+            this.label4.Location = new System.Drawing.Point(236, 284);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 23);
+            this.label4.Size = new System.Drawing.Size(32, 23);
             this.label4.TabIndex = 124;
-            this.label4.Text = "$99";
+            this.label4.Text = "$9";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // CVV
             // 
@@ -171,7 +172,7 @@
             this.CVV.PasswordChar = '\0';
             this.CVV.Radius = 10;
             this.CVV.Size = new System.Drawing.Size(221, 27);
-            this.CVV.TabIndex = 122;
+            this.CVV.TabIndex = 2;
             // 
             // label3
             // 
@@ -269,7 +270,7 @@
             this.Card_Number.PasswordChar = '\0';
             this.Card_Number.Radius = 10;
             this.Card_Number.Size = new System.Drawing.Size(221, 27);
-            this.Card_Number.TabIndex = 113;
+            this.Card_Number.TabIndex = 1;
             // 
             // label
             // 
@@ -293,6 +294,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // errorProvider1
             // 
@@ -314,6 +316,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "pro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "pro";

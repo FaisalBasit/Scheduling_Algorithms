@@ -17,6 +17,4 @@ drop table users
 
 select * from users
 
-insert into users values('faisal159','Faisal','123',null,null,null,null,'yes');
-
 delete from users

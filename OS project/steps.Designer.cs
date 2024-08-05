@@ -34,16 +34,12 @@
             this.stepsListBox = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.gunaHScrollBar1 = new Guna.UI.WinForms.GunaHScrollBar();
-            this.gunaVScrollBar1 = new Guna.UI.WinForms.GunaVScrollBar();
-            this.GanttChart.SuspendLayout();
             this.SuspendLayout();
             // 
             // GanttChart
             // 
             this.GanttChart.AccessibleRole = System.Windows.Forms.AccessibleRole.ToolBar;
             this.GanttChart.BackColor = System.Drawing.Color.Transparent;
-            this.GanttChart.Controls.Add(this.gunaHScrollBar1);
             this.GanttChart.Location = new System.Drawing.Point(48, 47);
             this.GanttChart.Name = "GanttChart";
             this.GanttChart.Size = new System.Drawing.Size(827, 126);
@@ -105,9 +101,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
             this.label4.Location = new System.Drawing.Point(44, 27);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 23);
+            this.label4.Size = new System.Drawing.Size(123, 23);
             this.label4.TabIndex = 133;
-            this.label4.Text = "Ghantt Chart";
+            this.label4.Text = "Gantt Chart";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
@@ -122,40 +118,12 @@
             this.label1.TabIndex = 134;
             this.label1.Text = "Steps";
             // 
-            // gunaHScrollBar1
-            // 
-            this.gunaHScrollBar1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaHScrollBar1.LargeChange = 10;
-            this.gunaHScrollBar1.Location = new System.Drawing.Point(0, 116);
-            this.gunaHScrollBar1.Maximum = 100;
-            this.gunaHScrollBar1.Name = "gunaHScrollBar1";
-            this.gunaHScrollBar1.ScrollIdleColor = System.Drawing.Color.Silver;
-            this.gunaHScrollBar1.Size = new System.Drawing.Size(827, 10);
-            this.gunaHScrollBar1.TabIndex = 0;
-            this.gunaHScrollBar1.ThumbColor = System.Drawing.Color.DimGray;
-            this.gunaHScrollBar1.ThumbHoverColor = System.Drawing.Color.Gray;
-            this.gunaHScrollBar1.ThumbPressedColor = System.Drawing.Color.DarkGray;
-            // 
-            // gunaVScrollBar1
-            // 
-            this.gunaVScrollBar1.LargeChange = 10;
-            this.gunaVScrollBar1.Location = new System.Drawing.Point(864, 220);
-            this.gunaVScrollBar1.Maximum = 100;
-            this.gunaVScrollBar1.Name = "gunaVScrollBar1";
-            this.gunaVScrollBar1.ScrollIdleColor = System.Drawing.Color.Silver;
-            this.gunaVScrollBar1.Size = new System.Drawing.Size(10, 119);
-            this.gunaVScrollBar1.TabIndex = 135;
-            this.gunaVScrollBar1.ThumbColor = System.Drawing.Color.DimGray;
-            this.gunaVScrollBar1.ThumbHoverColor = System.Drawing.Color.Gray;
-            this.gunaVScrollBar1.ThumbPressedColor = System.Drawing.Color.DarkGray;
-            // 
             // steps
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(924, 426);
-            this.Controls.Add(this.gunaVScrollBar1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.stepsListBox);
@@ -168,7 +136,6 @@
             this.Name = "steps";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Load += new System.EventHandler(this.steps_Load);
-            this.GanttChart.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,7 +147,5 @@
         private System.Windows.Forms.ListBox stepsListBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaHScrollBar gunaHScrollBar1;
-        private Guna.UI.WinForms.GunaVScrollBar gunaVScrollBar1;
     }
 }

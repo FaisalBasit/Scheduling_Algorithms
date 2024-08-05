@@ -179,7 +179,7 @@
             this.pass.PasswordChar = '●';
             this.pass.Radius = 10;
             this.pass.Size = new System.Drawing.Size(221, 27);
-            this.pass.TabIndex = 116;
+            this.pass.TabIndex = 2;
             this.pass.UseSystemPasswordChar = true;
             // 
             // label2
@@ -210,7 +210,7 @@
             this.username.PasswordChar = '\0';
             this.username.Radius = 10;
             this.username.Size = new System.Drawing.Size(221, 27);
-            this.username.TabIndex = 113;
+            this.username.TabIndex = 1;
             this.username.Click += new System.EventHandler(this.username_Click);
             // 
             // label

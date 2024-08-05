@@ -42,16 +42,18 @@ namespace OS_project
                                  $"Turnaround Time = ( Completion Time - Arrival Time ) = {process.PturnAround_time}";
             stepsListBox.Items.Add(stepDetails);
         }
+
+
         public void printGanttChart(List<Process> ganttChart)
         {
             int num = 0;
-            System.Windows.Forms.TextBox textBox6 = new System.Windows.Forms.TextBox();
+            TextBox textBox6 = new TextBox();
             GanttChart.Controls.Add(textBox6);
             textBox6.Name = "textBox6";
             textBox6.ReadOnly = true;
             textBox6.Size = new System.Drawing.Size(25, 25);
             textBox6.BackColor = ganttChart[0].process_color;
-            textBox6.Location = new System.Drawing.Point(Y, 38);
+            textBox6.Location = new System.Drawing.Point(Y, 59);
             textBox6.Text = (0.ToString());
 
             for (; num < ganttChart.Count; num++)
@@ -60,29 +62,29 @@ namespace OS_project
                 {
                     if (ganttChart[num].P_id != ganttChart[num + 1].P_id)
                     {
-                        System.Windows.Forms.TextBox textBox2 = new System.Windows.Forms.TextBox();
+                        TextBox textBox2 = new TextBox();
                         GanttChart.Controls.Add(textBox2);
                         textBox2.Name = "textBox2";
                         textBox2.ReadOnly = true;
                         textBox2.Size = new System.Drawing.Size(25, 25);
                         textBox2.BackColor = ganttChart[num].process_color;
-                        textBox2.Location = new System.Drawing.Point(Y, 38);
-                        textBox2.Text = ((num).ToString());
+                        textBox2.Location = new System.Drawing.Point(Y, 59);
+                        textBox2.Text = (num.ToString());
 
-                        System.Windows.Forms.TextBox textBox5 = new System.Windows.Forms.TextBox();
+                        TextBox textBox5 = new TextBox();
                         GanttChart.Controls.Add(textBox5);
                         textBox5.Name = "textBox5";
                         textBox5.ReadOnly = true;
                         textBox5.Size = new System.Drawing.Size(25, 25);
                         textBox5.BackColor = ganttChart[num + 1].process_color;
-                        textBox5.Location = new System.Drawing.Point((Y + textBox2.Width), 38);
+                        textBox5.Location = new System.Drawing.Point((Y + textBox2.Width), 59);
                         textBox5.Text = ((num + 1).ToString());
                     }
                     Y += 25;
                 }
                 if (num == (ganttChart.Count - 1))
                 {
-                    System.Windows.Forms.TextBox textBox7 = new System.Windows.Forms.TextBox();
+                    TextBox textBox7 = new TextBox();
                     GanttChart.Controls.Add(textBox7);
                     textBox7.ReadOnly = true;
                     textBox7.Name = "textBox7";
@@ -91,10 +93,43 @@ namespace OS_project
                         textBox7.BackColor = ganttChart[num - 1].process_color;
                     else
                         textBox7.BackColor = ganttChart[num].process_color;
-                    textBox7.Location = new System.Drawing.Point(Y, 38);
-                    textBox7.Text = ((num).ToString());
+                    textBox7.Location = new System.Drawing.Point(Y, 59);
+                    textBox7.Text = ((num+1).ToString());
                 }
             }
+        }
+
+        public void printGanttChart1(List<Process> ganttChart, List<Process> Process_List)
+        {
+            //int num = Process_List[0].arrival_time;
+
+            //System.Windows.Forms.TextBox textBox6 = new System.Windows.Forms.TextBox();
+            //GanttChart.Controls.Add(textBox6);
+            //textBox6.Name = "textBox6";
+            //textBox6.ReadOnly = true;
+            //textBox6.Size = new System.Drawing.Size(25, 25);
+            //textBox6.BackColor = ganttChart[0].process_color;
+            //textBox6.Location = new System.Drawing.Point(X, 38);
+            //textBox6.Text = (num.ToString());
+
+            for (int i = 0; i < Process_List.Count; i++)
+            {
+                               
+                X = (X + (25 * Process_List[i].burst_time )-25);
+                System.Windows.Forms.TextBox textBox7 = new System.Windows.Forms.TextBox();
+                GanttChart.Controls.Add(textBox7);
+                textBox7.Name = "textBox7";
+                textBox7.ReadOnly = true;
+                textBox7.Size = new System.Drawing.Size(25, 25);
+                textBox7.BackColor = ganttChart[0].process_color;            
+                textBox7.Location = new System.Drawing.Point(X, 38);
+                textBox7.Text = (Process_List[i].completion_time.ToString());
+                X=X+25;
+               
+                
+            }  
+                
+            
         }
         private void steps_Load(object sender, EventArgs e)
         {

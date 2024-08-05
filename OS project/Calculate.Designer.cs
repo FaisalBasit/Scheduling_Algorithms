@@ -52,7 +52,7 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label4 = new System.Windows.Forms.Label();
+            this.title = new System.Windows.Forms.Label();
             this.cal_display1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,6 +68,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.ArrivalTime = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.BurstTime = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.FCFS = new System.Windows.Forms.RadioButton();
+            this.RR = new System.Windows.Forms.RadioButton();
+            this.TQ = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.tq_label = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.processid)).BeginInit();
             this.gunaElipsePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cal_display2)).BeginInit();
@@ -75,6 +80,8 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ArrivalTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BurstTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TQ)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // cal
@@ -117,7 +124,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
-            this.label3.Location = new System.Drawing.Point(479, 22);
+            this.label3.Location = new System.Drawing.Point(450, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 16);
             this.label3.TabIndex = 117;
@@ -129,7 +136,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
-            this.label2.Location = new System.Drawing.Point(260, 21);
+            this.label2.Location = new System.Drawing.Point(242, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 16);
             this.label2.TabIndex = 115;
@@ -166,7 +173,7 @@
             this.Add_Process.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Add_Process.ImageSize = new System.Drawing.Size(20, 20);
             this.Add_Process.LineColor = System.Drawing.Color.White;
-            this.Add_Process.Location = new System.Drawing.Point(726, 30);
+            this.Add_Process.Location = new System.Drawing.Point(657, 30);
             this.Add_Process.Name = "Add_Process";
             this.Add_Process.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(63)))), ((int)(((byte)(89)))));
             this.Add_Process.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -200,7 +207,7 @@
             this.Clear_process.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Clear_process.ImageSize = new System.Drawing.Size(20, 20);
             this.Clear_process.LineColor = System.Drawing.Color.White;
-            this.Clear_process.Location = new System.Drawing.Point(726, 78);
+            this.Clear_process.Location = new System.Drawing.Point(657, 78);
             this.Clear_process.Name = "Clear_process";
             this.Clear_process.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(63)))), ((int)(((byte)(89)))));
             this.Clear_process.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -254,7 +261,7 @@
             // 
             this.gunaElipsePanel2.BaseColor = System.Drawing.Color.White;
             this.gunaElipsePanel2.Controls.Add(this.cal_display2);
-            this.gunaElipsePanel2.Controls.Add(this.label4);
+            this.gunaElipsePanel2.Controls.Add(this.title);
             this.gunaElipsePanel2.Controls.Add(this.cal_display1);
             this.gunaElipsePanel2.ForeColor = System.Drawing.Color.White;
             this.gunaElipsePanel2.Location = new System.Drawing.Point(34, 139);
@@ -346,17 +353,17 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "Waiting Time";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
-            // label4
+            // title
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
-            this.label4.Location = new System.Drawing.Point(12, 5);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(192, 23);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "First come first serve";
+            this.title.AutoSize = true;
+            this.title.BackColor = System.Drawing.Color.Transparent;
+            this.title.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
+            this.title.Location = new System.Drawing.Point(12, 5);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(192, 23);
+            this.title.TabIndex = 0;
+            this.title.Text = "First come first serve";
             // 
             // cal_display1
             // 
@@ -569,7 +576,7 @@
             this.ArrivalTime.FocusedState.Parent = this.ArrivalTime;
             this.ArrivalTime.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ArrivalTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.ArrivalTime.Location = new System.Drawing.Point(263, 41);
+            this.ArrivalTime.Location = new System.Drawing.Point(245, 41);
             this.ArrivalTime.Name = "ArrivalTime";
             this.ArrivalTime.ShadowDecoration.Parent = this.ArrivalTime;
             this.ArrivalTime.Size = new System.Drawing.Size(191, 27);
@@ -594,18 +601,102 @@
             this.BurstTime.FocusedState.Parent = this.BurstTime;
             this.BurstTime.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BurstTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.BurstTime.Location = new System.Drawing.Point(482, 41);
+            this.BurstTime.Location = new System.Drawing.Point(453, 41);
             this.BurstTime.Name = "BurstTime";
             this.BurstTime.ShadowDecoration.Parent = this.BurstTime;
             this.BurstTime.Size = new System.Drawing.Size(191, 27);
             this.BurstTime.TabIndex = 135;
             this.BurstTime.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(63)))), ((int)(((byte)(89)))));
             // 
+            // FCFS
+            // 
+            this.FCFS.AutoSize = true;
+            this.FCFS.Checked = true;
+            this.FCFS.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.FCFS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
+            this.FCFS.Location = new System.Drawing.Point(6, 12);
+            this.FCFS.Name = "FCFS";
+            this.FCFS.Size = new System.Drawing.Size(54, 20);
+            this.FCFS.TabIndex = 136;
+            this.FCFS.TabStop = true;
+            this.FCFS.Text = "FCFS";
+            this.FCFS.UseVisualStyleBackColor = true;
+            this.FCFS.CheckedChanged += new System.EventHandler(this.FCFS_CheckedChanged);
+            // 
+            // RR
+            // 
+            this.RR.AutoSize = true;
+            this.RR.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.RR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
+            this.RR.Location = new System.Drawing.Point(6, 33);
+            this.RR.Name = "RR";
+            this.RR.Size = new System.Drawing.Size(107, 20);
+            this.RR.TabIndex = 137;
+            this.RR.Text = "Round Robin";
+            this.RR.UseVisualStyleBackColor = true;
+            this.RR.CheckedChanged += new System.EventHandler(this.RR_CheckedChanged);
+            // 
+            // TQ
+            // 
+            this.TQ.BackColor = System.Drawing.Color.Transparent;
+            this.TQ.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
+            this.TQ.BorderRadius = 9;
+            this.TQ.BorderThickness = 2;
+            this.TQ.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TQ.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TQ.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TQ.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TQ.DisabledState.Parent = this.TQ;
+            this.TQ.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.TQ.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.TQ.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TQ.FocusedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TQ.FocusedState.Parent = this.TQ;
+            this.TQ.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TQ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.TQ.Location = new System.Drawing.Point(42, 87);
+            this.TQ.Name = "TQ";
+            this.TQ.ShadowDecoration.Parent = this.TQ;
+            this.TQ.Size = new System.Drawing.Size(191, 27);
+            this.TQ.TabIndex = 139;
+            this.TQ.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(63)))), ((int)(((byte)(89)))));
+            this.TQ.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // tq_label
+            // 
+            this.tq_label.AutoSize = true;
+            this.tq_label.BackColor = System.Drawing.Color.Transparent;
+            this.tq_label.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tq_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(115)))), ((int)(((byte)(132)))));
+            this.tq_label.Location = new System.Drawing.Point(39, 68);
+            this.tq_label.Name = "tq_label";
+            this.tq_label.Size = new System.Drawing.Size(101, 16);
+            this.tq_label.TabIndex = 138;
+            this.tq_label.Text = "Time Quantum";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.RR);
+            this.groupBox4.Controls.Add(this.FCFS);
+            this.groupBox4.Location = new System.Drawing.Point(809, 3);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(111, 58);
+            this.groupBox4.TabIndex = 140;
+            this.groupBox4.TabStop = false;
+            // 
             // Calculate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.TQ);
+            this.Controls.Add(this.tq_label);
             this.Controls.Add(this.BurstTime);
             this.Controls.Add(this.ArrivalTime);
             this.Controls.Add(this.groupBox1);
@@ -630,6 +721,9 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ArrivalTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BurstTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TQ)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -652,7 +746,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label title;
         private System.Windows.Forms.DataGridView cal_display1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -668,5 +762,10 @@
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2NumericUpDown ArrivalTime;
         private Guna.UI2.WinForms.Guna2NumericUpDown BurstTime;
+        private System.Windows.Forms.RadioButton FCFS;
+        private System.Windows.Forms.RadioButton RR;
+        private Guna.UI2.WinForms.Guna2NumericUpDown TQ;
+        private System.Windows.Forms.Label tq_label;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }

@@ -21,12 +21,15 @@ namespace OS_project
     {
         public string username { get; set; }
         public string paid { get; set; }
+        public string cardnum { get; set; }
+        public string cardexpirydate { get; set; }
+        public int cvv { get; set; }
 
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["EMS"].ConnectionString);
 
-        string pattern = "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$";
+       
         //regular expression for Union Pay Card
-        string Union = "^(62[0 - 9]{14,17})$";
+        string Union = "^(62[0-9]{14,17})$$";
         //regular expression for Visa Card 
         string visa = "^4[0-9]{12}(?:[0-9]{3})?$";
         //regular expression for Visa Master Card 
@@ -70,7 +73,6 @@ namespace OS_project
             }
             if (!isValid)
             {
-                Card_Number.Focus();
                 errorProvider1.SetError(Card_Number, "Invalid card number!");
             }
             else
@@ -85,7 +87,6 @@ namespace OS_project
         {
             if (Regex.IsMatch(CVV.Text, cvnpattern) == false)
             {
-                CVV.Focus();
                 errorProvider2.SetError(this.CVV, "Invalid Card validation value(CVV)!");
             }
             else
@@ -103,7 +104,6 @@ namespace OS_project
         {
             if (Regex.IsMatch(CardExpiry.Text, expiry) == false)
             {
-                CardExpiry.Focus();
                 errorProvider3.SetError(this.CVV, "Invalid format!, write in this format DD/YY");
             }
             else
@@ -124,17 +124,16 @@ namespace OS_project
                 !Regex.IsMatch(Card_Number.Text, Mastercard) &&
                 !Regex.IsMatch(Card_Number.Text, Union))
             {
-                Card_Number.Focus();
+                
                 errorProvider1.SetError(Card_Number, "Invalid card number!");
             }
             else if (!Regex.IsMatch(CardExpiry.Text, expiry))
             {
-                CardExpiry.Focus();
+               
                 errorProvider2.SetError(CardExpiry, "Invalid format! Write in this format DD/YY");
             }
             else if (!Regex.IsMatch(CVV.Text, cvnpattern))
             {
-                CVV.Focus();
                 errorProvider3.SetError(CVV, "Invalid Card validation number (CVN)!");
             }
             else
@@ -156,10 +155,13 @@ namespace OS_project
                             }
                             else
                             {
-                                string updateQuery = "UPDATE users SET paid = @paid WHERE username = @username";
+                                string updateQuery = "UPDATE users SET paid = @paid , cardnum = @cardnum, cvv = @cvv , cardexpirydate  = @cardexpirydate WHERE username = @username";
                                 using (SqlCommand updateCmd = new SqlCommand(updateQuery, con))
                                 {
                                     updateCmd.Parameters.AddWithValue("@paid", "yes");
+                                    updateCmd.Parameters.AddWithValue("@cardnum", Card_Number.Text);
+                                    updateCmd.Parameters.AddWithValue("@cvv", CVV.Text);
+                                    updateCmd.Parameters.AddWithValue("@cardexpirydate", CardExpiry.Text);
                                     updateCmd.Parameters.AddWithValue("@username", username);
 
                                     updateCmd.ExecuteNonQuery();
@@ -196,6 +198,16 @@ namespace OS_project
              
 
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -167,5 +167,15 @@ namespace OS_project
                 this.Close();
             }
         }
+
+        private void controlpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void welcome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
